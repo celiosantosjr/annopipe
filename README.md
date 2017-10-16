@@ -48,15 +48,16 @@ After download the files, you should update the paths in the script file. Take a
 
 - **Download the program libraries from zenodo repository: [Link](https://zenodo.org/record/1013521#.WeTepCdLfCI)**
  
-- add the ref_folder path to the script
-
-- add the pathway of anno_pipe.sh to your main PATH
-
 - type this command:
 
 ```
 $ tar -zxvf /path/to/ref_folder.tar.gz
 ```
+
+- add the ref_folder path to the script
+
+- add the pathway of anno_pipe.sh to your main PATH
+
 
 3. Running:
 
