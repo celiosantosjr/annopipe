@@ -40,7 +40,7 @@ $ diamond makedb --in <database.fasta> -d <database.output>
 
 2. Installation:
 
-You should update the paths in the script file, take attention:
+After download the files, you should update the paths in the script file. Take attention to:
 
 - Substitute the paths of the databases pre-formatted in diamond database;
 
@@ -49,6 +49,12 @@ You should update the paths in the script file, take attention:
 - add the ref_folder path to the script
 
 - add the pathway of anno_pipe.sh to your main PATH
+
+- type this command:
+
+```
+tar -zxvf ref_folder.tar.gz
+```
 
 3. Running:
 
