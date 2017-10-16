@@ -46,6 +46,8 @@ After download the files, you should update the paths in the script file. Take a
 
 - HMMER databases are ready to use, just update the paths
 
+- **Download the program libraries from zenodo repository: [Link](https://zenodo.org/record/1013521#.WeTepCdLfCI)**
+ 
 - add the ref_folder path to the script
 
 - add the pathway of anno_pipe.sh to your main PATH
