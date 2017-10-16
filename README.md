@@ -1,6 +1,6 @@
 # annopipe - Automated pipeline for annotation and parsing of predicted genes files.
 
-This pipeline is interesting for annotation and parsing of large datasets, using this in files obtained after the gene prediction.
+This pipeline is interesting for annotation and parsing of large datasets, using this in protein sequence files obtained after the gene prediction.
 
 --------------------------------------------------------------------------
 
