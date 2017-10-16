@@ -53,8 +53,7 @@ After download the files, you should update the paths in the script file. Take a
 - type this command:
 
 ```
-$ cd /path/to/ref_folder
-$ for i in $(ls *.gz); do tar -zxvf $i; done
+$ tar -zxvf /path/to/ref_folder.tar.gz
 ```
 
 3. Running:
