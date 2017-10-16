@@ -1,7 +1,5 @@
 # annopipe
 
-## ANNO_PIPE
-
 This pipeline is interesting for annotation and parsing of large datasets. Using this after the gene prediction.
 
 --------------------------------------------------------------------------
