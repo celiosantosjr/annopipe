@@ -6,17 +6,17 @@ This pipeline is interesting for annotation and parsing of large datasets. Using
 
 **This version accounts resources to allow annotation with:**
 
-- KEGG (http://kegg.jp/);
+- [KEGG](http://kegg.jp/);
 
-- COG (https://www.ncbi.nlm.nih.gov/COG/);
+- [COG](https://www.ncbi.nlm.nih.gov/COG/);
 
-- Uniprot (http://www.uniprot.org/);
+- [Uniprot](http://www.uniprot.org/);
 
-- EGGNOG (http://eggnogdb.embl.de/#/app/home);
+- [EGGNOG](http://eggnogdb.embl.de/#/app/home);
 
-- PFAM (http://pfam.xfam.org/);
+- [PFAM](http://pfam.xfam.org/);
 
-- CAMERA (http://camera.calit2.net/).
+- [CAMERA](http://camera.calit2.net/).
 
 ---------------------------------------------------------------------------
 
@@ -24,9 +24,9 @@ This pipeline is interesting for annotation and parsing of large datasets. Using
 
 Make sure that you have installed:
 
-- HMMER (http://hmmer.org/);
+- [HMMER](http://hmmer.org/);
 
-- Diamond (https://github.com/bbuchfink/diamond);
+- [Diamond](https://github.com/bbuchfink/diamond);
 
 - Python && Biopython.
 
@@ -34,8 +34,9 @@ Before starting you also should download the last update of the databases above 
 
 Then generates the diamond databases using the following command:
 
-´´´diamond makedb --in <database.fasta> -d <database.output>
-´´´
+```
+diamond makedb --in <database.fasta> -d <database.output>
+```
 
 2. Installation:
 
@@ -51,16 +52,20 @@ You should update the paths in the script file, take attention:
 
 3. Running:
 
-´´´anno_pipe.sh <input_fasta_file> <output_folder> <threads>
-´´´
+```
+anno_pipe.sh <input_fasta_file> <output_folder> <threads>
+```
 
 **H++ ::** In case of threads number not be specified then the anno_pipe will use 4 threads.
+
 
 ## Specifications
 
 System : Linux
 
 Uses cutoff of 45% of identity in Blast approaches and 1e-5 for HMM profiles.
+
+For more details look directly the sections parsing in the script. The original searching files are kept and allows a new parsing as desired by the user.
 
 ## Author
 
@@ -76,7 +81,7 @@ Célio Dias Santos Júnior
 
 *Institut del Ciencias del Mar, Barcelona, Spain*
 
-[Contact]<celio.diasjunior@gmail.com>
+[Contact](celio.diasjunior@gmail.com)
 
 ## License
 
