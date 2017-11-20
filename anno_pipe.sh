@@ -136,7 +136,7 @@ $diamond blastp -d $KEGG --id 25.0 --query-cover 50.0 -q $1 -o $2/KEGG_diamond.t
 
 echo "H++ :: KEGG Parsing"
 
-awk '$3 > 45 && (($4-$5)/($8-$7)) > 0.6 && $11 < 1e-10 && $12 > 50' $2/KEGG_diamond.tbl > $2/KEGG_filtered.tbl
+LANG=C; LC_ALL=C; sort -k1,1 -k12,12gr -k11,11g -k3,3gr $2/KEGG_diamond.tbl | sort -u -k1,1 --merge > $2/KEGG_filtered.tbl
 
 cut -f 1-3 $2/KEGG_filtered.tbl > $2/starting
 
@@ -172,7 +172,7 @@ $diamond blastp -d $CAMERA --id 25.0 --query-cover 50.0 -q $1 -o $2/CAMERA_diamo
 
 echo "H++ :: CAMERA Parsing"
 
-awk '$3 > 45 && (($4-$5)/($8-$7)) > 0.6 && $11 < 1e-10 && $12 > 50' $2/CAMERA_diamond.tbl > $2/CAMERA_filtered.tbl
+LANG=C; LC_ALL=C; sort -k1,1 -k12,12gr -k11,11g -k3,3gr $2/CAMERA_diamond.tbl | sort -u -k1,1 --merge > $2/CAMERA_filtered.tbl
 
 echo "H++ :: COG Searching"
 
@@ -180,7 +180,7 @@ $diamond blastp -d $COG --id 25.0 --query-cover 50.0 -q $1 -o $2/COG_diamond.tbl
 
 echo "H++ :: COG Parsing"
 
-awk '$3 > 45 && (($4-$5)/($8-$7)) > 0.6 && $11 < 1e-10 && $12 > 50' $2/COG_diamond.tbl > $2/COG_filtered.tbl
+LANG=C; LC_ALL=C; sort -k1,1 -k12,12gr -k11,11g -k3,3gr $2/COG_diamond.tbl | sort -u -k1,1 --merge > $2/COG_filtered.tbl
 
 cut -f 1-3 $2/COG_filtered.tbl > $2/starting
 
@@ -220,7 +220,7 @@ $diamond blastp -d $Uniprot --id 25.0 --query-cover 50.0 -q $1 -o $2/UNIPROT_dia
 
 echo "H++ :: Uniprot Parsing"
 
-awk '$3 > 45 && (($4-$5)/($8-$7)) > 0.6 && $11 < 1e-10 && $12 > 50' $2/UNIPROT_diamond.tbl > $2/Uniprot_filtered.tbl
+LANG=C; LC_ALL=C; sort -k1,1 -k12,12gr -k11,11g -k3,3gr $2/UNIPROT_diamond.tbl | sort -u -k1,1 --merge > $2/Uniprot_filtered.tbl
 
 cut -f 1-3 $2/Uniprot_filtered.tbl > $2/starting
 
